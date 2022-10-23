@@ -1,0 +1,13 @@
+body{
+    background: url(../img/clima.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.text{
+    text-align: center;
+    font-size: 1,5rem;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 25px;
+}
