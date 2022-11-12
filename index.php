@@ -46,7 +46,8 @@ require "./administrador/database.php";
     <link rel="stylesheet" type="text/css" href="css/estilos.css">  
 </head>
   <body>
-  <img src="img/weathernow.png">
+  <img src="img/logown.png.crdownload"> 
+
   <?php
       if(isset($_POST['ingresar'])){
         if(empty($_POST['usuario']) || empty($_POST['contrasena'])){
@@ -63,7 +64,7 @@ require "./administrador/database.php";
         }
           if($fila=mysqli_fetch_assoc($resultado)){
             echo "<script language='JavaScript'>
-           alert('Bienvenido');
+           alert('Bienvenido $usuario');
            location.assign('inicio.php');
            </script>";
           }else{
@@ -105,7 +106,7 @@ require "./administrador/database.php";
             </div>
             
         </div>
-        
+        <?php if($conexion){ echo "<center><h4>Conexion exitosa a la base de datos</h4></center>";} ?>;
     </div>
     <?php if (!empty($message)) : ?>
       <p><?= $message ?></p>
