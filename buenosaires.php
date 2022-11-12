@@ -12,8 +12,10 @@
 </head>
 <body>
 <img src="img/logown.png.crdownload"> 
-    Buenos Aires
-    <table>
+<hr>
+   <div> <h2><p style=" color:white; height:25px; " align="center">Buenos Aires (América del Sur)</p></h2></div>
+<hr>
+    <table class="meses">
         <div id="main-container">
 	        <thead>
 	           <tr>

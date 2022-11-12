@@ -6,7 +6,7 @@ body{
 }
 
 #main-container{
-    margin: 150px auto;
+    margin: 90px auto;
     width: 600px;
 }
 
@@ -42,4 +42,12 @@ tr:nth-child(even){
 tr:hover td{
     background-color: #369681;
     color: white;
+}
+
+table.meses {
+    background-color: white;
+    text-align: center;
+    width: 35%;
+    border-collapse: collapse;
+    margin:0 auto;
 }

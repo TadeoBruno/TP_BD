@@ -13,8 +13,10 @@
 </head>
 <body>
 <img src="img/logown.png.crdownload"> 
-    Moscú
-    <table>
+<hr>
+   <div> <h2><p style=" color:white; height:25px; " align="center">Moscú (Europa)</p></h2></div>
+<hr>
+    <table class="meses">
         <div id="main-container">
 	        <thead>
 	           <tr>

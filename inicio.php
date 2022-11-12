@@ -12,10 +12,9 @@
 </head>
 <body>
 <img src="img/logown.png.crdownload"> 
-   <div> <p style=" color:white; background:black; height:35px; " align="center">Tablero de Control</p></div>
 <hr>
-<br>	
-</br>
+   <div> <h1><p style=" color:white; height:35px; " align="center">Tablero de Control</p></h1></div>
+<hr>
 <table>
         <div id="main-container">
 	        <thead>
