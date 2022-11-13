@@ -19,7 +19,7 @@
         <div id="main-container">
 	        <thead>
 	           <tr>
-	        	   <th>Ciudad</th><th>Temperatura promedio de los primeros 6 meses (°C)</th><th>Objetivo(°C)</th><th>Desvio</th><th>Estado</th><th>Ver temperatura de cada semana</th>
+	        	   <th>Ciudad</th><th>Temperatura promedio de los primeros 6 meses</th><th>Objetivo</th><th>Desvio</th><th>Estado</th><th>Ver temperatura de cada semana</th>
 	           </tr>
             </thead>
 	        <?php
@@ -34,7 +34,7 @@
 	        <tr>
                     <td><?php echo $mostrarbuenosaires['nombre'] ?></td>
 					<td><?php $promediotempbsas=(($mostrartempmesesbsas['enero'] + $mostrartempmesesbsas['febrero'] + $mostrartempmesesbsas['marzo'] + $mostrartempmesesbsas['abril'] + $mostrartempmesesbsas['mayo'] + $mostrartempmesesbsas['junio']) / 6);
-					echo round($promediotempbsas, 1); ?></td>
+					echo round($promediotempbsas, 1); ?>°C</td>
 					<td>entre 18°C y 24°C</td>
 					<td><?php if ($promediotempbsas > 24){
                             echo round(($promediotempbsas - 24), 1);
@@ -62,7 +62,7 @@
 			<tr>
 			        <td><?php echo $mostrarmoscu['nombre'] ?></td>
 					<td><?php $promediotempmoscu=(($mostrartempmesesmoscu['enero'] + $mostrartempmesesmoscu['febrero'] + $mostrartempmesesmoscu['marzo'] + $mostrartempmesesmoscu['abril'] + $mostrartempmesesmoscu['mayo'] + $mostrartempmesesmoscu['junio']) / 6);
-					echo round($promediotempmoscu, 1); ?></td>
+					echo round($promediotempmoscu, 1);?>°C</td>
 					<td>entre 18°C y 24°C</td>
 					<td><?php if ($promediotempmoscu > 24){
                             echo round(($promediotempmoscu - 24), 1);
@@ -90,7 +90,7 @@
 			<tr>
 			        <td><?php echo $mostrararabiasaudita['nombre'] ?></td>
 					<td><?php $promediotemparabiasaudita=(($mostrartempmesesarabiasaudita['enero'] + $mostrartempmesesarabiasaudita['febrero'] + $mostrartempmesesarabiasaudita['marzo'] + $mostrartempmesesarabiasaudita['abril'] + $mostrartempmesesarabiasaudita['mayo'] + $mostrartempmesesarabiasaudita['junio']) / 6);
-					echo round($promediotemparabiasaudita, 1); ?></td>
+					echo round($promediotemparabiasaudita, 1); ?>°C</td>
 					<td>entre 18°C y 24°C</td>
 					<td><?php if ($promediotemparabiasaudita > 24){
                             echo round(($promediotemparabiasaudita - 24), 1);
@@ -118,7 +118,7 @@
 			<tr>
 		        	<td><?php echo $mostrarargelia['nombre'] ?></td>
 					<td><?php $promediotempargelia=(($mostrartempmesesargelia['enero'] + $mostrartempmesesargelia['febrero'] + $mostrartempmesesargelia['marzo'] + $mostrartempmesesargelia['abril'] + $mostrartempmesesargelia['mayo'] + $mostrartempmesesargelia['junio']) / 6);
-					echo round($promediotempargelia, 1); ?></td>
+					echo round($promediotempargelia, 1); ?>°C</td>
 					<td>entre 18°C y 24°C</td>
 					<td><?php if ($promediotempargelia > 24){
                             echo round(($promediotempargelia - 24), 1);
