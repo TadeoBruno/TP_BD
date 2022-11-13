@@ -1,5 +1,5 @@
 <?php
-   require "./administrador/database.php";
+   require "./administrador/database.php";	
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -42,12 +42,12 @@
 						    echo round(($promediotempbsas - 18), 1);
 							}?> </td>
 					<td><?php if ($promediotempbsas > 17 and $promediotempbsas < 25){
-	        	    	           echo "Temperatura ideal";
-	    						} if ($promediotempbsas > 9 and $promediotempbsas < 31)  {
-	    						  echo "Temperatura poco peligrosa";}
-	        	                if ($promediotempbsas < 10 || $promediotempbsas > 30) {
-	        	    			echo "Temperatura peligrosa";
-	    					    }?></td>
+	        	    	           echo '<img src="img/tempverde.png" title="Temperatura ideal" alt="Temperatura ideal" width="45px" height="45px">';
+	    						} if (($promediotempbsas > 9 and $promediotempbsas< 18) || ($promediotempbsas > 24 and $promediotempbsas < 31))  {
+	    						  echo '<img src="img/tempamarillo.png" alt="Temperatura poco peligrosa" title="Temperatura poco peligrosa" width="45px" height="45px">';
+								} if ($promediotempbsas < 10 || $promediotempbsas> 30) {
+	        	    			echo '<img src="img/temproja.png" alt="Temperatura peligrosa" title="Temperatura peligrosa" width="45px" height="45px">';
+	    					    } ?></td>
 					<td><a href="buenosaires.php" >Ver mas detalladamente...</td>
             </tr>
 			<?php
@@ -69,13 +69,13 @@
 					        } if ($promediotempmoscu < 18){
 						    echo round(($promediotempmoscu - 18), 1);
 							}?> </td>
-					<td><?php if ($promediotempmoscu > 17 and $promediotempmoscu < 25){
-	        	    	           echo "Temperatura ideal";
-	    						} if ($promediotempmoscu > 9 and $promediotempmoscu < 31)  {
-	    						  echo "Temperatura poco peligrosa";}
-	        	                if ($promediotempmoscu < 10 || $promediotempmoscu > 30) {
-	        	    			echo "Temperatura peligrosa";
-	    					    }?></td>
+					<td><?php if ($promediotempmoscu  > 17 and $promediotempmoscu  < 25){
+	        	    	           echo '<img src="img/tempverde.png" alt="Temperatura ideal" width="45px" height="45px">';
+	    						} if (($promediotempmoscu  > 9 and $promediotempmoscu  < 18) || ($promediotempmoscu  > 24 and $promediotempmoscu  < 31))  {
+	    						  echo '<img src="img/tempamarillo.png" title="Temperatura poco peligrosa" alt="Temperatura poco peligrosa" width="45px" height="45px">';
+								} if ($promediotempmoscu < 10 || $promediotempmoscu > 30) {
+	        	    			echo '<img src="img/temproja.png" alt="Temperatura peligrosa" title="Temperatura peligrosa" width="45px" height="45px">';
+	    					    } ?></td>
 					<td><a href="moscu.php" >Ver mas detalladamente...</td>
             </tr>
 			<?php
@@ -98,12 +98,12 @@
 						    echo round(($promediotemparabiasaudita - 18), 1);
 							}?> </td>
 					<td><?php if ($promediotemparabiasaudita > 17 and $promediotemparabiasaudita < 25){
-	        	    	           echo "Temperatura ideal";
-	    						} if ($promediotemparabiasaudita > 9 and $promediotemparabiasaudita < 31)  {
-	    						  echo "Temperatura poco peligrosa";}
-	        	                if ($promediotemparabiasaudita < 10 || $promediotemparabiasaudita > 30) {
-	        	    			echo "Temperatura peligrosa";
-	    					    }?></td>
+	        	    	           echo '<img src="img/tempverde.png" alt="Temperatura ideal" width="45px" height="45px">';
+	    						} if (($promediotemparabiasaudita > 9 and $promediotemparabiasaudita < 18) || ($promediotemparabiasaudita > 24 and $promediotemparabiasaudita < 31))  {
+	    						  echo '<img src="img/tempamarillo.png" title="Temperatura poco peligrosa" alt="Temperatura poco peligrosa" width="45px" height="45px">';
+								} if ($promediotemparabiasaudita < 10 || $promediotemparabiasaudita> 30) {
+	        	    			echo '<img src="img/temproja.png" alt="Temperatura peligrosa" title="Temperatura peligrosa" width="45px" height="45px">';
+	    					    } ?></td>
 					<td><a href="arabiasaudita.php" >Ver mas detalladamente...</td>
             </tr>
 			<?php
@@ -126,13 +126,14 @@
 						    echo round(($promediotempargelia - 18), 1);
 							} else {echo"<center>-";}?> </td>
 					<td><?php if ($promediotempargelia > 17 and $promediotempargelia < 25){
-	        	    	           echo "Temperatura ideal";
+	        	    	           echo '<img src="img/tempverde.png" alt="Temperatura ideal" title="Temperatura ideal" width="45px" height="45px">';
 	    						} if (($promediotempargelia > 9 and $promediotempargelia < 18) || ($promediotempargelia > 24 and $promediotempargelia < 31))  {
-	    						  echo "Temperatura poco peligrosa";}
-	        	                if ($promediotempargelia < 10 || $promediotempargelia> 30) {
-	        	    			echo "Temperatura peligrosa";
-	    					    }?></td>
-					<td><a href="argelia.php" >Ver mas detalladamente...</td>
+	    						  echo '<img src="img/tempamarillo.png" title="Temperatura poco peligrosa" alt="Temperatura poco peligrosa" width="45px" height="45px">';
+								} if ($promediotempargelia < 10 || $promediotempargelia> 30) {
+	        	    			echo '<img src="img/temproja.png" alt="Temperatura peligrosa" title="Temperatura peligrosa" width="45px" height="45px">';
+	    					    } ?></td>
+					<td><a href="argelia.php">Ver mas detalladamente...</td>
+			</tr>
 	    </div>
 </table>
     

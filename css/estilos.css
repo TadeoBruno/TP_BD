@@ -1,5 +1,5 @@
 body{
-    background: url(../img/clima.jpg);
+    background: url(../img/fondoclima.jpg);
     background-size: cover;
     background-attachment: fixed;
     font-family: Arial;
@@ -20,14 +20,14 @@ body{
 
 table{
     background-color: white;
-    text-align: left;
+    text-align: center;
     width: 100%;
     border-collapse: collapse;
 }
 
 th, td{
     border: solid 2px black;
-    padding: 20px;
+    padding: 30px;
 }
 
 thead{

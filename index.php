@@ -106,11 +106,11 @@ require "./administrador/database.php";
             </div>
             
         </div>
-        <?php if($conexion){ echo "<center><h4>Conexion exitosa a la base de datos</h4></center>";} ?>;
+        <?php if($conexion){ echo "<center><h4>Conexion exitosa a la base de datos</h4></center>";} ?>
     </div>
     <?php if (!empty($message)) : ?>
       <p><?= $message ?></p>
-    <?php endif;?>
+    <?php endif ;?>
   </div>
   <?php
   ?>
